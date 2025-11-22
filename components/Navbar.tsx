@@ -44,12 +44,12 @@ export const Navbar: React.FC = () => {
             <div className="bg-brand-600 p-2 rounded-lg">
               <Map className="h-6 w-6 text-white" />
             </div>
-            <div className="flex flex-col justify-center relative pr-16"> {/* Added padding right to make space for signature */}
+            <div className="flex flex-col justify-center relative pr-24"> {/* Increased padding right to make space for longer signature */}
               <span className={`font-bold text-xl tracking-tight transition-colors leading-none ${scrolled ? 'text-slate-900 dark:text-white' : 'text-slate-900 dark:text-white'}`}>
                 TripSync
               </span>
-              <span className="text-[10px] font-bold tracking-widest text-brand-600 dark:text-brand-400 absolute -bottom-2.5 -right-0 whitespace-nowrap transform translate-x-4">
-                by S.K.SHREESH
+              <span className="text-[10px] font-bold tracking-widest text-brand-600 dark:text-brand-400 absolute -bottom-2.5 -right-0 whitespace-nowrap transform translate-x-2">
+                by Shreesh & Abhijit
               </span>
             </div>
           </div>
