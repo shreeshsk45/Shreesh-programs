@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Map, Sun, Moon } from 'lucide-react';
 
@@ -39,13 +40,18 @@ export const Navbar: React.FC = () => {
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 dark:bg-[#0B0B0F]/90 backdrop-blur-md border-b border-slate-200 dark:border-white/5 py-4 shadow-sm dark:shadow-none' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <div className="bg-brand-600 p-2 rounded-lg">
               <Map className="h-6 w-6 text-white" />
             </div>
-            <span className={`font-bold text-xl tracking-tight transition-colors ${scrolled ? 'text-slate-900 dark:text-white' : 'text-slate-900 dark:text-white'}`}>
-              TripSync
-            </span>
+            <div className="flex flex-col justify-center relative pr-16"> {/* Added padding right to make space for signature */}
+              <span className={`font-bold text-xl tracking-tight transition-colors leading-none ${scrolled ? 'text-slate-900 dark:text-white' : 'text-slate-900 dark:text-white'}`}>
+                TripSync
+              </span>
+              <span className="text-[10px] font-bold tracking-widest text-brand-600 dark:text-brand-400 absolute -bottom-2.5 -right-0 whitespace-nowrap transform translate-x-4">
+                by S.K.SHREESH
+              </span>
+            </div>
           </div>
 
           {/* Desktop Nav */}

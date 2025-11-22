@@ -1,7 +1,12 @@
+
 import React from 'react';
 import { ArrowRight, PlayCircle } from 'lucide-react';
 
-export const Hero: React.FC = () => {
+interface HeroProps {
+  onOpenCalculator: () => void;
+}
+
+export const Hero: React.FC<HeroProps> = ({ onOpenCalculator }) => {
   return (
     <div className="relative bg-slate-50 dark:bg-[#0B0B0F] overflow-hidden pt-32 pb-20 lg:pt-48 lg:pb-32 transition-colors duration-300">
       {/* Abstract Background Shapes */}
@@ -34,7 +39,10 @@ export const Hero: React.FC = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="w-full sm:w-auto px-8 py-4 bg-brand-600 hover:bg-brand-500 text-white rounded-xl font-bold text-lg transition-all shadow-lg shadow-brand-900/20 dark:shadow-brand-900/30 flex items-center justify-center gap-2 group">
+          <button 
+            onClick={onOpenCalculator}
+            className="w-full sm:w-auto px-8 py-4 bg-brand-600 hover:bg-brand-500 text-white rounded-xl font-bold text-lg transition-all shadow-lg shadow-brand-900/20 dark:shadow-brand-900/30 flex items-center justify-center gap-2 group"
+          >
             Get Started Free
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>

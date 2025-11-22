@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { ShieldCheck, Lock, Server, Fingerprint, CreditCard, Key } from 'lucide-react';
 import { FEATURES } from '../constants';
 
 export const Features: React.FC = () => {
@@ -15,7 +17,7 @@ export const Features: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           {FEATURES.map((feature, idx) => (
             <div 
               key={idx} 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Map, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -11,7 +11,10 @@ export const Footer: React.FC = () => {
               <div className="bg-brand-600 p-1.5 rounded-lg">
                 <Map className="h-5 w-5 text-white" />
               </div>
-              <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white">TripSync</span>
+              <div className="flex flex-col">
+                <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white leading-none">TripSync</span>
+                <span className="text-[9px] font-bold tracking-widest text-brand-600 dark:text-brand-400 mt-1 whitespace-nowrap">by S.K.SHREESH</span>
+              </div>
             </div>
             <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
               The all-in-one platform for the modern traveler. Plan, book, and explore the world with confidence.
@@ -49,7 +52,7 @@ export const Footer: React.FC = () => {
         </div>
         
         <div className="pt-8 border-t border-slate-200 dark:border-white/10 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-slate-500 text-sm">© 2024 TripSync Inc. All rights reserved.</p>
+          <p className="text-slate-500 text-sm">© 2024 TripSync Inc. Designed by S.K.SHREESH. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-slate-500 text-sm hover:text-slate-900 dark:hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="text-slate-500 text-sm hover:text-slate-900 dark:hover:text-white transition-colors">Terms of Service</a>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export const Brainstorm: React.FC = () => {
@@ -19,15 +20,24 @@ export const Brainstorm: React.FC = () => {
               This drawing isn't just history; it's our product roadmap. We're building the 
               connections between discovery, booking, and experiencing that we visualized on day one.
             </p>
-            <div className="flex items-center gap-4">
-              <div className="h-12 w-12 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden border-2 border-slate-300 dark:border-slate-700 shadow-md">
-                <img src="https://picsum.photos/100/100" alt="Founder" />
+            
+            <div className="flex items-center gap-5 bg-white dark:bg-[#15151A] p-4 rounded-2xl border border-slate-200 dark:border-white/5 shadow-sm w-fit">
+              <div className="h-14 w-14 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden border-2 border-slate-300 dark:border-slate-700 shadow-md flex-shrink-0">
+                <img src="https://i.pravatar.cc/150?u=founders" alt="Founders" />
               </div>
-              <div>
-                <p className="font-bold text-slate-900 dark:text-white">Alex & Jamie</p>
-                <p className="text-sm text-slate-500">Co-founders, TripSync</p>
+              <div className="flex flex-col gap-1">
+                <div>
+                    <span className="font-bold text-slate-900 dark:text-white text-sm block leading-tight">S.K.SHREESH</span>
+                    <span className="text-[10px] text-brand-600 dark:text-brand-400 font-extrabold tracking-wider uppercase">CEO & CTO</span>
+                </div>
+                <div className="w-full h-px bg-slate-100 dark:bg-white/5 my-0.5"></div>
+                <div>
+                    <span className="font-bold text-slate-900 dark:text-white text-sm block leading-tight">K.P.ABHIJIT</span>
+                    <span className="text-[10px] text-brand-600 dark:text-brand-400 font-extrabold tracking-wider uppercase">COO & CFO</span>
+                </div>
               </div>
             </div>
+
           </div>
           
           <div className="lg:w-1/2 relative">
